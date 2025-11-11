@@ -250,9 +250,19 @@
         const artikelList = document.getElementById('artikelList');
         const artikelArrow = document.getElementById('artikelArrow');
 
+        // Restore state from localStorage
+        const isArtikelenOpen = localStorage.getItem('artikelenOpen') === 'true';
+        if (isArtikelenOpen) {
+            artikelList.classList.remove('hidden');
+            artikelArrow.classList.add('rotate-180');
+        }
+
         artikelToggle.addEventListener('click', () => {
-            artikelList.classList.toggle('hidden');
+            const isOpen = artikelList.classList.toggle('hidden');
             artikelArrow.classList.toggle('rotate-180');
+            
+            // Save state to localStorage
+            localStorage.setItem('artikelenOpen', !isOpen);
         });
 
         // Page filtering function
