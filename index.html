@@ -70,7 +70,21 @@
                 <a href="index.html" class="p-2 rounded active flex items-center">
                     🏠 Hoofdpagina
                 </a>
-                </a>
+
+                <!-- Dropdown for Artikelen -->
+                <div class="mt-2">
+                    <button id="artikelToggle" class="w-full p-2 rounded flex items-center justify-between hover:bg-gray-700">
+                        <span>📰 Artikelen</span>
+                        <svg id="artikelArrow" class="h-4 w-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="artikelList" class="hidden pl-4 mt-2 space-y-2">
+                        <a href="art1.html" class="p-2 rounded flex items-center hover:bg-gray-700">
+                            📄 Artikel 1 | 11-11-2025
+                        </a>
+                    </div>
+                </div>
             </nav>
         </div>
 
@@ -113,6 +127,16 @@
 
         hamburgerButton.addEventListener('click', () => {
             sidebar.classList.toggle('-translate-x-full');
+        });
+
+        // Toggle for Artikelen dropdown
+        const artikelToggle = document.getElementById('artikelToggle');
+        const artikelList = document.getElementById('artikelList');
+        const artikelArrow = document.getElementById('artikelArrow');
+
+        artikelToggle.addEventListener('click', () => {
+            artikelList.classList.toggle('hidden');
+            artikelArrow.classList.toggle('rotate-180');
         });
 
         // Page filtering function

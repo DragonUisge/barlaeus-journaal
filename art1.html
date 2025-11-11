@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5W7G97H899"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5W7G97H899');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artikel 1 - Barlaeus Journaal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .sidebar {
+            width: 16rem;
+            background-color: #1f2937;
+        }
+
+        .sidebar input {
+            background-color: #374151;
+            color: #f9fafb;
+        }
+
+        .sidebar a:hover,
+        .sidebar button:hover {
+            background-color: #4b5563;
+        }
+
+        .sidebar .active {
+            background-color: #3b82f6;
+        }
+
+        kbd {
+            background-color: #4b5563;
+            border: 1px solid #6b7280;
+            border-radius: 0.25rem;
+            padding: 0.125rem 0.375rem;
+            font-family: monospace;
+            font-size: 0.9em;
+            color: #e5e7eb;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+    <div class="relative min-h-screen md:flex">
+        <!-- Burger button -->
+        <div class="bg-gray-800 text-gray-100 flex justify-between md:hidden">
+            <a href="index.html" class="block p-4 text-white font-bold">Barlaeus Journaal</a>
+            <button id="hamburger-button" class="p-4 focus:outline-none focus:bg-gray-700">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar"
+            class="sidebar p-4 space-y-4 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out z-20">
+            <h2 class="text-xl font-bold mb-4">Pagina's</h2>
+            <nav id="pageLinks" class="flex flex-col space-y-2">
+                <a href="index.html" class="p-2 rounded flex items-center">
+                    🏠 Hoofdpagina
+                </a>
+
+                <!-- Dropdown for Artikelen -->
+                <div class="mt-2">
+                    <button id="artikelToggle" class="w-full p-2 rounded flex items-center justify-between hover:bg-gray-700">
+                        <span>📰 Artikelen</span>
+                        <svg id="artikelArrow" class="h-4 w-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="artikelList" class="pl-4 mt-2 space-y-2">
+                        <a href="art1.html" class="p-2 rounded flex items-center active">
+                            📄 Artikel 1 | 11-11-2025
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Main content -->
+        <main class="flex-1 p-8 overflow-y-auto">
+            <article class="max-w-4xl mx-auto">
+                <header class="mb-8">
+                    <h1 class="text-4xl font-bold text-red-500 mb-2">Artikel 1</h1>
+                    <div class="flex items-center text-gray-400 text-sm mb-4">
+                        <span>📅 11 november 2025</span>
+                    </div>
+                </header>
+
+                <div class="prose prose-invert max-w-none">
+                    <!-- Article content -->
+                    <section class="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
+                        <h2 class="text-2xl font-bold text-blue-400 mb-4">📰 Eerste Editie van de Krant</h2>
+                        <p class="text-gray-300 mb-4">
+                            Welkom bij de allereerste editie van het Barlaeus Journaal! In deze uitgave vind je alles over het lustrumfeest, survival kamp, de reis naar Ieper en nog veel meer spannende verhalen van dit schooljaar.
+                        </p>
+                        <div class="bg-gray-700 p-4 rounded mt-4">
+                            <p class="text-sm text-gray-300">
+                                <strong>🎨 Design bekijken:</strong> 
+                                <a href="https://www.canva.com/design/DAG0X2hSSus/YQCKwQlLeFvdWDqXxpK9Xw/edit" 
+                                   class="text-blue-400 hover:text-blue-300 underline break-all" 
+                                   target="_blank">
+                                    Canva Design Link
+                                </a>
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- LUSTRUM Section -->
+                    <section class="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
+                        <h2 class="text-2xl font-bold text-green-400 mb-4">🎉 LUSTRUM: Het Ongelooflijke Succes van 1A</h2>
+                        <p class="text-sm text-gray-400 mb-4"><em>Door Mette en Nina | Deadline: week van 20-26 september</em></p>
+                        
+                        <p class="text-gray-300 mb-4">
+                            Hoe kwam 1A aan zo belachelijk veel geld? Dat was de vraag die veel Barlaeanen zich stelden toen bekend werd gemaakt dat 1A (en 2D, overigens) naar het Tikibad ging. Nou, wij hebben een antwoord op die vraag.
+                        </p>
+
+                        <div class="bg-gradient-to-r from-green-900 to-blue-900 p-6 rounded-lg mb-4">
+                            <h3 class="text-xl font-bold text-yellow-300 mb-3">💰 Het Winnende Bedrag</h3>
+                            <p class="text-gray-200 mb-2">
+                                Twee weken een villa huren in Ibiza, vijf nieuwe iPhones 17, 1500 panini's in de kantine — dat kan je allemaal kopen voor <span class="text-yellow-300 font-bold text-2xl">€5.500</span>. Ook is dit het bedrag dat klas 1A heeft opgehaald voor Stichting Alzheimer tijdens het lustrum dit jaar.
+                            </p>
+                            <p class="text-gray-200">
+                                <strong>🏆 The honorable mention</strong> gaat naar 2D met €5.400.
+                            </p>
+                        </div>
+
+                        <p class="text-gray-300 mb-4">
+                            Niemand had verwacht dat een eerste klas het lustrum zou winnen. Als we naar de bovenbouw kijken, is daar in iedere klas maar maximaal €1.000 opgehaald. "Hoe hebben deze kinderen dit toch gedaan?!" vroeg iedere Barlaeaan zich af terwijl ze naar het scorebord keken.
+                        </p>
+                        
+                        <p class="text-gray-300 mb-4">
+                            Wij zitten in klas 1A en vertellen jou precies hoe we het hebben gedaan.
+                        </p>
+                    </section>
+
+                    <!-- Leiden Section -->
+                    <section class="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
+                        <h2 class="text-2xl font-bold text-purple-400 mb-4">🏛️ Leiden</h2>
+                        <p class="text-sm text-gray-400 mb-4"><em>Door Kiki</em></p>
+                        <p class="text-gray-300 italic">
+                            Voor verreweg de meesten van jullie was Duinrell hoogstwaarschijnlijk het hoogtepunt van de lustrumweek. Achtbanen en waterattracties, zijn dat niet de fundamenten voor een leuk schooluitje? Het antwoord bleek voor een aantal een duidelijke 'nee' te zijn: geef mij maar een rustig dagje in een historische stad zoals Leiden.
+                        </p>
+                    </section>
+
+                    <!-- 5B Band Section -->
+                    <section class="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
+                        <h2 class="text-2xl font-bold text-red-400 mb-4">🎸 5B-band in Paradiso!</h2>
+                        <p class="text-sm text-gray-400 mb-4"><em>Door Nina en Mette</em></p>
+                        
+                        <p class="text-gray-300 mb-4">
+                            De 5B trad op in <strong>Paradiso</strong> op het schoolfeest! Hoe ze dat vonden en hoe ze alles goed geregeld hebben, lees je in dit interview!
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300 mb-2">🎵 Hoe hebben jullie de liedjes gekozen?</h4>
+                                <p class="text-gray-300">"We deden al een paar jaar mee aan klassentoernooi en daar hebben we liedjes gespeeld die we allemaal heel leuk vinden en goed kennen". Ze hadden ook een paar nieuwe liedjes, die hadden ze gekozen door het liedje in de groepsapp te zetten. Vaak zijn ze het niet eens met elkaar, maar als er wel een liedje is dat ze allemaal leuk vinden, is het al heel snel besloten dat ze dat liedje gaan doen.</p>
+                            </div>
+
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300 mb-2">💡 Hoe zijn jullie op het idee gekomen om dit bandje te beginnen?</h4>
+                                <p class="text-gray-300">Vooral door klassentoernooi, maar ook omdat ze in de eersteklasmusical met z'n drieën in combo zaten. Later bij klassentoernooi kwamen Eva en Ruben erbij.</p>
+                            </div>
+
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300 mb-2">🎹 Hoe oud waren jullie toen je een instrument ging bespelen?</h4>
+                                <ul class="text-gray-300 list-disc list-inside space-y-1">
+                                    <li><strong>Eva:</strong> "Eigenlijk zing ik al sinds ik kan praten"</li>
+                                    <li><strong>Teun:</strong> "Ik was acht toen ik begon met gitaarspelen en zang doe ik nu 3 jaar"</li>
+                                    <li><strong>Ruben:</strong> "Ik speel piano sinds mijn zesde"</li>
+                                    <li><strong>Jacob:</strong> "Ik speel net als Teun ook sinds mijn achtste gitaar"</li>
+                                    <li><strong>Kwan:</strong> "Ik speel drum sinds ik acht of negen was"</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300 mb-2">🤝 Zijn jullie zelf ook goed bevriend met elkaar?</h4>
+                                <p class="text-gray-300">"We zijn allemaal heel goed bevriend".</p>
+                            </div>
+
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300 mb-2">🌟 Hoe vonden jullie het om op te treden in Paradiso?</h4>
+                                <p class="text-gray-300">Ze vonden het allemaal heel erg cool. Het voelde voor hen als een ervaring die ze nooit meer vergeten.</p>
+                            </div>
+
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300 mb-2">❤️ Wat was jullie favoriete liedje om te spelen?</h4>
+                                <ul class="text-gray-300 list-disc list-inside space-y-1">
+                                    <li><strong>Teun:</strong> "Ik vond het eerste nummer het leukste"</li>
+                                    <li><strong>Eva:</strong> "Ik vond Let It Go het leukste, want mensen reageren daar altijd heel leuk op"</li>
+                                    <li><strong>Ruben:</strong> "Ik vond Let It Go ook het leukst, want tussen al die pop- en rocknummers verwacht je niet opeens Let It Go"</li>
+                                    <li><strong>Jacob:</strong> "Voor mij Valerie, omdat daar trompet in zit"</li>
+                                    <li><strong>Kwan:</strong> "Voor mij is het Locked Out of Heaven van Bruno Mars"</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300 mb-2">🎧 Welke muziek luisteren jullie zelf veel naar?</h4>
+                                <ul class="text-gray-300 list-disc list-inside space-y-1">
+                                    <li><strong>Teun:</strong> "Ik luister naar heel veel soorten muziek, maar vooral jaren 70, 80 en 90"</li>
+                                    <li><strong>Eva:</strong> "Ik hou heel veel van ABBA en ook van musicalmuziek"</li>
+                                    <li><strong>Ruben:</strong> "Van Jeff Buckley, I Want Someone Badly"</li>
+                                    <li><strong>Jacob:</strong> "Ik luister veel naar rock, bijvoorbeeld de Red Hot Chili Peppers"</li>
+                                    <li><strong>Kwan:</strong> "Ik luister echt naar alles"</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300 mb-2">😰 Waren jullie zenuwachtig voor jullie optreden?</h4>
+                                <p class="text-gray-300">"Op het podium niet echt, maar na het optreden wel".</p>
+                            </div>
+
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300 mb-2">🔜 Gaan jullie nog een keer optreden?</h4>
+                                <p class="text-gray-300">Ze gaan nog een keer optreden bij klassentoernooi.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Survival Section -->
+                    <section class="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
+                        <h2 class="text-2xl font-bold text-orange-400 mb-4">🏕️ Survivalkamp: Verwachtingen vs. Realiteit</h2>
+                        <p class="text-sm text-gray-400 mb-4"><em>Door Jente Vervoort en Sara Cohen</em></p>
+                        
+                        <p class="text-gray-300 mb-4">
+                            Afgelopen week was het <strong>23ste survivalkamp</strong> van het Barlaeus. Onze verwachtingen waren niet hoog, deels kwam dat door de horrorverhalen die we van afgelopen jaar hadden gehoord en omdat we eigenlijk geen idee hadden wat het kamp inhield. Om jullie een duidelijker beeld te geven, hebben we onze verwachtingen en de realiteit op een rijtje gezet:
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="bg-gray-700 p-4 rounded border-l-4 border-yellow-500">
+                                <h4 class="font-bold text-yellow-300 mb-2">💭 Verwachting: Activiteiten die tegenvallen</h4>
+                                <p class="text-gray-300"><strong>Realiteit:</strong> Er waren zeker een paar activiteiten die we wat minder leuk vonden, doordat het bijvoorbeeld zwaar en lang duurde of dat er een kans was dat onze spullen nat konden worden. Dat is niet iets waar veel mensen zin in hebben. Maar als je er nu op terugkijkt, maak je op dit kamp wel herinneringen die je niet meer gaat vergeten (zoals meer dan 6 uur over een wandeling van 1 uur doen).</p>
+                            </div>
+
+                            <div class="bg-gray-700 p-4 rounded border-l-4 border-green-500">
+                                <h4 class="font-bold text-green-300 mb-2">💭 Verwachting: Nieuwe mensen leren kennen</h4>
+                                <p class="text-gray-300"><strong>Realiteit:</strong> Het was zeker een stuk makkelijker om met nieuwe mensen te praten. Op school praat je altijd gewoon met je vrienden en klasgenoten, maar op kamp kon dit helemaal niet, omdat de groepen zo waren ingedeeld dat je niet met je vrienden zou zitten. In eerste instantie vond niemand dit natuurlijk leuk, maar uiteindelijk maakte dit het veel makkelijker om met anderen te praten.</p>
+                            </div>
+
+                            <div class="bg-gray-700 p-4 rounded border-l-4 border-blue-500">
+                                <h4 class="font-bold text-blue-300 mb-2">💭 Verwachting: Slechte slaap</h4>
+                                <p class="text-gray-300"><strong>Realiteit:</strong> Zoals verwacht hadden we niet de beste slaap gehad. De nachten waren ontzettend koud en er was zeker in de eerste nacht veel wind. De bivakken (nou bivak is een groot woord) waren natuurlijk niet zo comfortabel als onze eigen bedden en het hing er eigenlijk veel vanaf hoe goed je je bivak had gebouwd en of je genoeg warme slaapkleding had meegenomen. Ook hadden we het geluk dat het niet had geregend.</p>
+                            </div>
+
+                            <div class="bg-gray-700 p-4 rounded border-l-4 border-purple-500">
+                                <h4 class="font-bold text-purple-300 mb-2">💭 Verwachting: Het kamp zou lang aanvoelen</h4>
+                                <p class="text-gray-300"><strong>Realiteit:</strong> Het kamp duurde drie dagen lang en eigenlijk kwam dit wel overeen met ons tijdsgevoel. Tijdens de lange wandelingen of fietstochten waarbij we geen idee hadden waar we ons bevonden, voelde het echt wel langer dan het daadwerkelijk was. Toch zorgden deze momenten wel voor het echte kampgevoel en hebben we leuke herinneringen kunnen maken.</p>
+                            </div>
+
+                            <div class="bg-gray-700 p-4 rounded border-l-4 border-red-500">
+                                <h4 class="font-bold text-red-300 mb-2">💭 Verwachting: Gezellig kampvuur</h4>
+                                <p class="text-gray-300"><strong>Realiteit:</strong> Het kampvuur heeft zeker voldaan aan onze verwachtingen. 's Avonds bij het kampvuur was echt een moment waar we voor uitkeken door de dag heen. Een groep had bijvoorbeeld ook Wolter mee, die de groep natuurlijk moest trakteren op een paar goede klassiekers zoals <em>Wonderwall</em> van Oasis. Er werden liedjes gezongen, lekkers gegeten en verhalen gedeeld over avonturen die door de dag waren meegemaakt. Een gezellige boel dus!</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-green-900 to-blue-900 p-6 rounded-lg mt-6">
+                            <h4 class="font-bold text-yellow-300 text-lg mb-3">✨ Conclusie</h4>
+                            <p class="text-gray-200">
+                                Uiteindelijk was onze vrees van tevoren onnodig. We hebben nieuwe mensen ontmoet, veel activiteiten gedaan waar we af en toe niet heel veel zin in hadden en gezellige momenten met z'n allen gedeeld. Helaas niet de beste slaap gehad, maar daar kunnen we mee leven. Het waren hele leuke dagen. Voor de volgende survivalaars: jullie hebben niks om je zorgen over te maken!
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Horoscoop Section -->
+                    <section class="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
+                        <h2 class="text-2xl font-bold text-pink-400 mb-4">🔮 Horoscoop</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300">Januari</h4>
+                                <p class="text-gray-300">Je vergeet sowieso je huiswerk 😟</p>
+                            </div>
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300">Februari</h4>
+                                <p class="text-gray-300">Je haalt een 9 voor je toets! 🎉</p>
+                            </div>
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300">Maart</h4>
+                                <p class="text-gray-300">Oh nee! Je fiets gaat lek onderweg 🚲</p>
+                            </div>
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300">April</h4>
+                                <p class="text-gray-300">Je wordt eruit gestuurd omdat je ging kletsen 😢</p>
+                            </div>
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300">Mei</h4>
+                                <p class="text-gray-300">Je 1 april-grap was iets te laat! Ook nog tijdens een proefwerk. Dat wordt een 1 😭</p>
+                            </div>
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300">Juni</h4>
+                                <p class="text-gray-300">Je bent de honderdduizendste bezoeker van de kantine! De rest van de week gratis eten! 🥘</p>
+                            </div>
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300">Juli</h4>
+                                <p class="text-gray-300">Je laat een hele harde scheet tijdens de les 🤢</p>
+                            </div>
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300">Augustus</h4>
+                                <p class="text-gray-300">Je telefoon wordt afgepakt 📱</p>
+                            </div>
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300">September</h4>
+                                <p class="text-gray-300">Je hebt een nieuw rooster gekregen. Onhandig 😕</p>
+                            </div>
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300">Oktober</h4>
+                                <p class="text-gray-300">Je hebt een heel leuk project. Geen saai werk! ✏️</p>
+                            </div>
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300">November</h4>
+                                <p class="text-gray-300">Je gaat over dit jaar 🎯</p>
+                            </div>
+                            <div class="bg-gray-700 p-4 rounded">
+                                <h4 class="font-bold text-blue-300">December</h4>
+                                <p class="text-gray-300">Er viel een oliebol in je gezicht 🥴</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Ingezonden Artikel Section -->
+                    <section class="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
+                        <h2 class="text-2xl font-bold text-indigo-400 mb-4">💭 Ingezonden Artikel: De Magie van Introversie</h2>
+                        <p class="text-sm text-gray-400 mb-4"><em>Door Leila, 1D</em></p>
+                        
+                        <p class="text-gray-300 mb-4">
+                            Jij kent vast wel iemand die introvert is. Iemand die graag dingen alleen doet, iemand die niet per se in het middelpunt hoeft te staan. Iemand die niet altijd z'n vinger opsteekt, ook al weet-ie het antwoord. Iemand die het prima vindt om even lekker niks te zeggen.
+                        </p>
+
+                        <p class="text-gray-300 mb-4">
+                            Maarre... introvert. Wat is dat eigenlijk? Is het een ziekte of een aandoening? Een psychische stoornis? Allemaal fout. Het is een benaming voor een bepaald type mensen. En natuurlijk leg ik ook even uit wát voor type mensen.
+                        </p>
+
+                        <p class="text-gray-300 mb-4">
+                            Het betekent dat je meer houdt van stilte dan van prikkels. Het betekent ook dat je misschien liever door de gang loopt zonder een praatje te maken met iemand die je kent, of dat je liever alleen zit tijdens de pauze.
+                        </p>
+
+                        <div class="bg-gray-700 p-5 rounded-lg mb-4">
+                            <h4 class="font-bold text-blue-300 mb-3">🔍 Kenmerken van Introverte Mensen</h4>
+                            <ol class="text-gray-300 list-decimal list-inside space-y-2">
+                                <li>Je praat misschien minder dan andere mensen die je kent.</li>
+                                <li>Je kunt heel goed luisteren.</li>
+                                <li>Je vindt het niet erg om lange tijd alleen te zijn.</li>
+                                <li>Je kunt scherpe observaties maken.</li>
+                                <li>Je bent vaak rustig en niet op zoek naar aandacht.</li>
+                                <li>Je hebt liever een paar hele goede vrienden dan honderd kennissen.</li>
+                                <li>Je vraagt je af waarom veel mensen vinden dat je vaker je mond open moet trekken.</li>
+                            </ol>
+                        </div>
+
+                        <p class="text-gray-300 mb-4">
+                            Die laatste is een stomme. Waarom zijn er zoveel mensen die vinden dat het onnatuurlijk is om je persoonlijkheid van je af te duwen, alsof het een last is? Introversie is allesbehalve dat. Er zitten veel voordelen en kenmerken aan vast... en als het gewoon is wie je bent, waarom zou je dat dan moeten verbergen?
+                        </p>
+
+                        <div class="bg-gradient-to-r from-purple-900 to-pink-900 p-5 rounded-lg mb-4">
+                            <h4 class="font-bold text-yellow-300 mb-3">⭐ Beroemde Introverten</h4>
+                            <p class="text-gray-200">
+                                Introverte mensen zijn er in alle soorten en maten. Zo beschrijven zangeres <strong>Beyoncé</strong> en actrice <strong>Emma Watson</strong> zichzelf als rustig, observerend en bereid om te luisteren naar anderen.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-700 p-5 rounded-lg mb-4">
+                            <h4 class="font-bold text-green-300 mb-3">🔄 Drie Typen</h4>
+                            <ul class="text-gray-300 space-y-3">
+                                <li><strong class="text-blue-300">Introvert:</strong> Je hebt weinig sociale behoeften en vindt het heerlijk om alleen te zijn.</li>
+                                <li><strong class="text-red-300">Extravert:</strong> Zo ongeveer het tegenovergestelde van introvert. Je hebt veel sociale behoeften, reageert anders op prikkels en vindt het geweldig om onder andere mensen te zijn.</li>
+                                <li><strong class="text-purple-300">Ambivert:</strong> Een mix van beide kanten met kenmerken van introversie en extraversie.</li>
+                            </ul>
+                        </div>
+
+                        <p class="text-gray-300 mb-4">
+                            Extravert en introvert zijn dan wel tegenpolen, toch werken ze samen het beste. Introverte mensen zijn bereid om te luisteren en op een analytische manier na te denken, terwijl extraverte mensen uitblinken in interactie en praktisch nadenken. Maar toch zul je zien dat ze een geweldig team vormen samen. Ze vullen elkaar perfect aan op alle onderdelen. En daarbij wil ik ook zeggen dat geen van de kampen beter of slechter is. Extravert, introvert of ambivert, iedereen is perfect zoals die is en samen zijn ze al helemaal onverslaanbaar!
+                        </p>
+
+                        <div class="bg-gray-700 p-5 rounded-lg mb-4">
+                            <h4 class="font-bold text-yellow-300 mb-3">🔋 Je Sociale Accu</h4>
+                            <p class="text-gray-300 mb-3">
+                                Heb je ooit gehoord van je sociale accu? De accu die bepaalt wanneer je weer 'kunt' en wanneer je eerst moet opladen?
+                            </p>
+                            <p class="text-gray-300 mb-3">
+                                Als introvert persoon kun je maar tot een bepaalde hoeveelheid prikkels aan. Zie het als een emmer water die regen opvangt. Als de emmer overstroomt, moet hij eerst zijn sociale accu opladen, of in dit geval worden leeggegooid, voordat hij weer regen kan opvangen.
+                            </p>
+                            <p class="text-gray-300">
+                                <strong>Hoe laad je op?</strong> Door stilte en/of rust natuurlijk! Al bestaat 'het opladen van je accu' maar uit een paar minuten muziek luisteren, alles is goed als jíj het maar goed vindt.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-700 p-5 rounded-lg mb-4">
+                            <h4 class="font-bold text-red-300 mb-3">😰 FOMO: Fear Of Missing Out</h4>
+                            <p class="text-gray-300 mb-3">
+                                Stel je voor. Je zit in een fijne leunstoel, achterover gezakt in een zitzak of chillt wat op de bank. Je slaat een bladzijde om van het leukste boek op aarde dat je aan het lezen bent of zet een nieuwe film aan op de TV. Je grabbelt wat chips of popcorn tevoorschijn.
+                            </p>
+                            <p class="text-gray-300 mb-3">
+                                Dan krijg je een berichtje op je telefoon. Een van je vrienden deelt een foto van zichzelf en wat andere mensen die je kent. Zo te zien zijn ze op een feestje en hebben ze het heel gezellig. En ineens begin je te twijfelen. Zou je daar niet eigenlijk bij moeten zijn?
+                            </p>
+                            <p class="text-gray-300 font-bold">
+                                Nou, NEE. Dat hoeft niet. Leuk voor je vrienden dat ze op een leuk feestje zijn, maar jij was toch zo ontzettend blij met hoe je er net bij zat?
+                            </p>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-blue-900 to-purple-900 p-5 rounded-lg mb-4">
+                            <h4 class="font-bold text-yellow-300 mb-3">💡 Citaat</h4>
+                            <p class="text-gray-200 italic text-lg">
+                                "Stille wateren hebben diepe gronden."
+                            </p>
+                            <p class="text-gray-300 text-sm mt-2">— Merel Heuberger, Nederlands docent</p>
+                        </div>
+
+                        <p class="text-gray-300 mb-4">
+                            Dit hele artikel is gebaseerd op een boek dat ik iets meer dan een jaar geleden heb gelezen. Het heet <strong>Stille Kracht</strong> en het gaat over introverte kinderen. Het geeft tientallen voorbeelden van introverte mensen die mooi hun boeltje voor elkaar hebben, ondanks en zelfs dankzij hun introversie.
+                        </p>
+
+                        <p class="text-gray-300 mb-4">
+                            Ik hoop dat je hier wat aan hebt gehad. Het was vooral mijn bedoeling om te laten zien hoe geweldig introversie eigenlijk is. Het zou natuurlijk ook kunnen dat je extravert of ambivert bent en helemaal niets begrijpt van alles wat ik gezegd heb. Dat geeft niet, maar ik hoop wel dat je je beter kunt inleven in mensen die minder praten en meer denken.
+                        </p>
+
+                        <p class="text-gray-300 font-bold text-center text-lg">
+                            Dat is dus de magie van het introvert zijn. ✨
+                        </p>
+                    </section>
+
+                    <!-- Quotes Docenten -->
+                    <section class="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
+                        <h2 class="text-2xl font-bold text-yellow-400 mb-4">💬 Quotes Docenten</h2>
+                        <div class="bg-gray-700 p-4 rounded">
+                            <p class="text-gray-300 italic text-lg">"Wordt er iemand zwanger gemaakt ofzo?"</p>
+                            <p class="text-gray-400 text-sm mt-2">— Yosri</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="mt-8 pt-8 border-t border-gray-700">
+                    <a href="index.html" class="text-blue-400 hover:text-blue-300">← Terug naar de hoofdpagina</a>
+                </div>
+            </article>
+
+            <!-- Footer -->
+            <footer class="text-center text-gray-400 text-sm mt-8 pt-8 border-t border-gray-700">
+                <p>&copy; 2025 Margarita Troshin. Alle rechten voorbehouden.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        // Script for sidebar toggle on mobile
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const sidebar = document.getElementById('sidebar');
+
+        hamburgerButton.addEventListener('click', () => {
+            sidebar.classList.toggle('-translate-x-full');
+        });
+
+        // Toggle for Artikelen dropdown
+        const artikelToggle = document.getElementById('artikelToggle');
+        const artikelList = document.getElementById('artikelList');
+        const artikelArrow = document.getElementById('artikelArrow');
+
+        artikelToggle.addEventListener('click', () => {
+            artikelList.classList.toggle('hidden');
+            artikelArrow.classList.toggle('rotate-180');
+        });
+    </script>
+</body>
+
+</html>
